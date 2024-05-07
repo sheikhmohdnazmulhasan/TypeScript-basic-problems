@@ -5,10 +5,12 @@ type RepeatString = (value: string, numberOfIteration: number) => string;
 
 const repeatString: RepeatString = (value, numberOfIteration) => {
     let initialValue = value;
-    
+
     for (let i: number = 0; i < numberOfIteration - 1; i++) {
         initialValue += value;
     }
 
     return initialValue;
 }
+
+// console.log(repeatString("Hello!", 3)) //Hello!Hello!Hello!
